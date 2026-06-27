@@ -1,5 +1,7 @@
 // src/components/ProductCard.jsx
 import React from 'react';
+import stand1 from './assets/stand1-portraitcrop.jpg';
+import stand2 from './assets/stand2-portraitcrop.jpg';
 
 function ProductCard({ name, price, category, image, instagramLink }) { 
   return (

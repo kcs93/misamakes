@@ -3,17 +3,27 @@ import { products } from './data/products';
 import ProductCard from './components/ProductCard';
 import Navbar from './components/Navbar';      // 2. Import Navbar
 import HomeHero from './components/HomeHero';  // 3. Import Home
+import stand1 from './assets/stand1-portraitcrop.jpg';
+import stand2 from './assets/stand2-portraitcrop.jpg';
+import './App.css'; 
+
 
 function App() {
   // This 'page' state keeps track of which "screen" we are looking at
   const [currentPage, setCurrentPage] = useState('home');
 
   return (
-    <div className="min-h-scale bg-cream text-stone">
-      {/* The Navbar is ALWAYS visible */}
-      <Navbar setPage={setCurrentPage} currentPage={currentPage} />
+    <div className="main-container">
+      <div 
+      className="left-section"
+      style={{ backgroundImage: `url(${stand1})` }}
+      />
+      <div 
+        className="center-section">
+        {/* The Navbar is ALWAYS visible */}
+        <Navbar setPage={setCurrentPage} currentPage={currentPage} />
 
-      <main className="max-w-6xl mx-auto px-4">
+        <main className="max-w-6xl mx-auto px-4">
         {/* 4. THE LOGIC: Conditional Rendering */}
         
         {currentPage === 'home' ? (
@@ -37,10 +47,15 @@ function App() {
           </div>
         )}
       </main>
-
-      <footer className="py-20 text-center text-stone/30 text-sm">
+            <footer className="py-20 text-center text-stone/30 text-sm">
       {new Date().getFullYear()} Misa Makes Studio.
       </footer>
+        </div>
+
+      <div 
+      className="right-section"
+      style={{ backgroundImage: `url(${stand2})` }}
+      />
     </div>
   );
 }

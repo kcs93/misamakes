@@ -161,6 +161,32 @@
   }
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Fill the viewport */
+  width: 100vw;
+}
+
+/* CRITICAL: All three sections MUST have height: 100% */
+.left-section, .right-section, .center-section {
+  height: 100%; 
+  display: flex;
+}
+
+.left-section, .right-section {
+  flex: 0 1 30%; /* 30% Width */
+  background-size: cover; /* Prevents distortion */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.center-section {
+  flex: 0 1 40%; /* 40% Width */
+  flex-direction: column; /* Stack navbar, content, footer */
+  overflow-y: auto; /* Enable scrolling ONLY in center */
+}   
+
 .ticks {
   position: relative;
   width: 100%;
