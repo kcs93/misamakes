@@ -1,0 +1,32 @@
+# publish-page.yml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main # or any other branch you want your app deployed from
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set GitHub token secret (if needed)
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        echo ::env(MY_TOKEN) > .github/secrets/token.txt
+
+    # This step will check out the `gh-pages` branch, which is used by GitHub Pages.
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+
+    - name: Deploy to gh-pages
+      id: deploy
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-page-deploy@v0.26.5
+      with:
+        github_token: ${{ secrets.MY_TOKEN }}
+        branch: main # or the branch you are deploying from
+        publish_dir: dist
