@@ -2,23 +2,74 @@
 export const products = [
   {
     id: 1,
-    name: "Pumpkin Mascot Tee",
-    price: 25,
-    category: "Apparel",
-    image: "/assets/images/flpc.png" 
+    name: "Detention With Friends",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/detention_with_friends.jpg" ,
+    link: "https://www.etsy.com/listing/1876097869/detention-with-friends"
   },
   {
     id: 2,
-    name: "Forest Spirit Sticker",
-    price: 4,
-    category: "Stickers",
-    image: "/assets/images/mrln.png"
+    name: "Shine Even When You Are Down",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/even_when_you're_down.jpg",
+    link: "https://www.etsy.com/listing/1876100953/shine-even-when-you-are-down"
   },
   {
     id: 3,
-    name: "Vanilla Bean Candle",
-    price: 15,
-    category: "Home Goods",
-    image: "/assets/images/pbbg.png"
+    name: "Falling In Love",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/falling_in_love.avif",
+    link: "https://www.etsy.com/listing/1861908460/falling-in-love"
+  },
+  {
+    id: 4,
+    name: "Friends In The Wild",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/friends_in_the_wild.jpg",
+    link: "https://www.etsy.com/listing/1876100491/friends-in-the-wild"
+  },
+  {
+    id: 5,
+    name: "Just A Frog And A Toad",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/just_a_frog_and_toad.avif",
+    link: "https://www.etsy.com/listing/1876100099/just-a-frog-and-a-toad"
+  },
+  {
+    id: 6,
+    name: "Little Flower In Disguise",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/little_flower_in_disguise.webp",
+    link: "https://www.etsy.com/listing/1884077139/little-flower-in-disguise"
+  },
+  {
+    id: 7,
+    name: "Littlest Frog, The Dart",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/littlest_frog_the_dart.jpg",
+    link: "https://www.etsy.com/listing/1884078015/littlest-frog-the-dart"
+  },
+  {
+    id: 8,
+    name: "Sleepy Woman",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/sleepy_woman.webp",
+    link: "https://www.etsy.com/listing/1884075095/sleepy-woman"
+  },
+  {
+    id: 9,
+    name: "The Ruby To My Sapphire",
+    price: 10,
+    category: "Prints",
+    image: "/assets/images/prints/the_ruby_to_my_sapphire.jpg",
+    link: "https://www.etsy.com/listing/1861908852/the-ruby-to-my-sapphire"
   }
 ];

@@ -1,7 +1,7 @@
 // src/components/ProductCard.jsx
 import React from 'react';
 
-function ProductCard({ name, price, category, image, instagramLink }) { 
+function ProductCard({ name, price, category, image, link }) { 
   return (
     <div className="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex flex-col gap-3">
       {/* The Image */}
@@ -10,28 +10,24 @@ function ProductCard({ name, price, category, image, instagramLink }) {
       </div>
 
       {/* The Info */}
-      <div className="flex flex-col gap-1">
-        <p className="text-xs uppercase tracking-widest text-sage font-bold">
+      <div className="flex flex-col gap-1 items-center">
+        <p className="text-xs uppercase tracking-widest text-sage font-bold text-center">
           {category}
         </p>
-        <h3 className="text-lg font-medium text-stone leading-tight">
+        <h3 className="text-md font-medium text-stone leading-tight text-center">
           {name}
         </h3>
-        <p className="text-mustard font-semibold text-xl">
+        <p className="text-mustard font-semibold text-xm text-center">
           ${price}
-        
         </p>
       </div>
-
-      {/* THE "DM TO ORDER" BUTTON */}
-      {/* This link will take them directly to her Instagram profile or a specific post */}
       <a 
-        href={instagramLink} 
+        href={link} 
         target="_blank" 
         rel="noopener noreferrer"
         className="mt-2 w-full py-3 text-center bg-stone/5 hover:bg-sage hover:text-white rounded-xl font-medium transition-all duration-300 text-sm text-stone border border-stone/10 cursor-pointer"
       >
-        Inquire via Instagram
+        See On Etsy
       </a>
     </div>
   );

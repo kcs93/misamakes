@@ -1,5 +1,6 @@
 // src/components/HomeHero.jsx
 import React from 'react';
+import { FaInstagram, FaEtsy } from 'react-icons/fa'; 
 
 function HomeHero() {
   return (
@@ -16,19 +17,26 @@ function HomeHero() {
         <p className="text-xs uppercase tracking-[0.3em] text-stone/40 font-bold">Follow the journey</p>
         
         <div className="flex gap-6">
-          {/* We will use placeholders, but you can swap these for real links later */}
-          <a href="https://www.instagram.com/m1samakes/" className="text-sage hover:text-mustard transition-all text-lg font-medium underline decoration-stone/20 underline-offset-8 cursor-pointer">
-            Instagram
+          {/* Instagram Icon */}
+          <a 
+            href="https://www.instagram.com/m1samakes/" 
+            className="text-sage hover:text-mustard transition-all text-xl flex items-center justify-center"
+            aria-label="Instagram"
+          >
+            <FaInstagram />
           </a>
-          {/*
+
+          {/* Divider */}
           <span className="text-stone/20">|</span>
-          <a href="#" className="text-sage hover:text-mustard transition-all text-lg font-medium underline decoration-stone/20 underline-offset-8">
-            TikTok
+
+          {/* Etsy Icon */}
+          <a 
+            href="https://www.etsy.com/shop/bmonicrafts/?etsrc=sdt" 
+            className="text-sage hover:text-mustard transition-all text-xl flex items-center justify-center"
+            aria-label="Etsy"
+          >
+            <FaEtsy />
           </a>
-          <span className="text-stone/20">|</span>
-          <a href="#" className="text-sage hover:text-mustard transition-all text-lg font-medium underline decoration-stone/20 underline-offset-8">
-            Etsy
-          </a>*/}
         </div>
       </div>
     </div>
