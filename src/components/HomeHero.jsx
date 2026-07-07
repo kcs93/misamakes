@@ -2,15 +2,22 @@
 import React from 'react';
 import { FaInstagram, FaEtsy } from 'react-icons/fa'; 
 
-function HomeHero() {
+function HomeHero({ logo, schedule }) {
   return (
-    <div className="py-20 text-center flex flex-col items-center gap-8">
+    <div className="text-center flex flex-col items-center gap-8">
+      {/*
+      <img src={logo} alt="Logo" style={{ maxWidth: '250px', height: 'auto' }} />  Adjust the size as needed 
+      */}
+
       <div className="space-y-4">
         <h1 className="text-6xl font-bold text-stone">Welcome to the Studio.</h1>
         <p className="text-xl text-stone/60 max-w-md mx-auto italic">
           Handmade art, cozy candles, and whimsical charms created by Misa.
         </p>
       </div>
+
+      {/* Schedule Image */}
+      <img src={schedule} alt="Schedule" style={{ width: '450px', height: '450px' }} /> {/* Adjust the styles as needed */}
 
       {/* Social Links Section */}
       <div className="mt-12 flex flex-col items-center gap-6">

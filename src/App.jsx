@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import HomeHero from './components/HomeHero';
 import stand1 from './assets/stand1-portraitcrop.jpg';
 import stand2 from './assets/stand2-portraitcrop.jpg';
+import schedule from './assets/images/m1sa_makes_schedule.jpg';
+import logo from './assets/images/m1sa_makes_logo.jpg'
 import './App.css'; 
 
 function App() {
@@ -41,7 +43,7 @@ function App() {
 
         <main className="max-w-6xl mx-auto px-4">
           {currentPage === 'home' ? (
-            <HomeHero />
+            <HomeHero logo={logo} schedule={schedule} />
           ) : (
             <div className="py-8">
               {/* 5. ADD SEARCH BAR TO SHOP SECTION */}
