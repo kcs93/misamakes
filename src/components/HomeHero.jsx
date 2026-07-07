@@ -4,7 +4,7 @@ import { FaInstagram, FaEtsy } from 'react-icons/fa';
 
 function HomeHero({ logo, schedule }) {
   return (
-    <div className="text-center flex flex-col items-center gap-8">
+    <div className="home-hero text-center flex flex-col items-center gap-8">
       {/*
       <img src={logo} alt="Logo" style={{ maxWidth: '250px', height: 'auto' }} />  Adjust the size as needed 
       */}
@@ -17,7 +17,7 @@ function HomeHero({ logo, schedule }) {
       </div>
 
       {/* Schedule Image */}
-      <img src={schedule} alt="Schedule" style={{ width: '450px', height: '450px' }} /> {/* Adjust the styles as needed */}
+      <img src={schedule} alt="Schedule" style={{ width: '550px', height: '550px' }} /> {/* Adjust the styles as needed */}
 
       {/* Social Links Section */}
       <div className="mt-12 flex flex-col items-center gap-6">

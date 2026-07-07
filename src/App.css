@@ -187,6 +187,10 @@
   /*overflow-y: auto; Enable scrolling ONLY in center */
 }   
 
+.home-hero {
+  height: calc(100vh - 30rem) /* Adjust as needed */
+}
+
 .search-bar {
   max-width: 500px; /* Limit the width of the search bar */
   margin: 0 auto;    /* Center the search bar */

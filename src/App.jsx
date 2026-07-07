@@ -102,10 +102,11 @@ function App() {
           )}
         </main>
 
-        {/* ... existing footer code ... */}
+        {/* ... existing footer code ... 
         <footer className="py-20 text-center text-stone/30 text-sm">
           {new Date().getFullYear()} Misa Makes Studio.
         </footer>
+        */}
       </div>
 
       <div className="right-section" style={{ backgroundImage: `url(${stand2})` }} />
