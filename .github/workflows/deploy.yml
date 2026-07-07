@@ -3,9 +3,9 @@ name: Deploy via SSH
 on:
   push:
     branches:
-      - main # Change this branch if needed, e.g., 'main', 'master'
+      - main
   schedule:
-    - cron: "0 12 * * *" # Schedule deployment at noon UTC every day
+    - cron: "0 12 * * *"
 
 jobs:
   build-and-deploy:
@@ -14,19 +14,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       
-    - name: Setup Node.js 18.x
+    - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18.x'
+        node-version: '20.x' # Use LTS version for stability
+        cache: 'npm'
       
-    - name: Install dependencies and generate Jekyll site
+    - name: Install dependencies and build
       run: |
         npm install
-        npx jekyll build --config _config.yml
+        npm run build # Correct command for Vite (outputs to ./dist)
 
     - name: Deploy via SSH
-      if: ${{ (github.ref == 'refs/heads/main' && github.event_name == 'push') || (github.event_name == 'schedule') }}
+      if: ${{ (github.ref == 'refs/heads/main' && github.event_name == 'push') || github.event_name == 'schedule' }}
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.MY_TOKEN }} # Update the token secret name from GITHUB_TOKEN to MY_TOKEN
-        publish_dir: ./_site # Directory containing the generated site files
+        github_token: ${{ secrets.MY_TOKEN }}
+        publish_dir: ./dist # Vite builds to 'dist', not '_site'   
