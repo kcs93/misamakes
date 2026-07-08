@@ -5,7 +5,7 @@ export const products = [
     name: "Detention With Friends",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/detention_with_friends.jpg" ,
+    image: "./assets/images/prints/detention_with_friends.jpg" ,
     link: "https://www.etsy.com/listing/1876097869/detention-with-friends"
   },
   {
@@ -13,7 +13,7 @@ export const products = [
     name: "Shine Even When You Are Down",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/even_when_you're_down.jpg",
+    image: "./assets/images/prints/even_when_you're_down.jpg",
     link: "https://www.etsy.com/listing/1876100953/shine-even-when-you-are-down"
   },
   {
@@ -21,7 +21,7 @@ export const products = [
     name: "Falling In Love",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/falling_in_love.avif",
+    image: "./assets/images/prints/falling_in_love.avif",
     link: "https://www.etsy.com/listing/1861908460/falling-in-love"
   },
   {
@@ -29,7 +29,7 @@ export const products = [
     name: "Friends In The Wild",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/friends_in_the_wild.jpg",
+    image: "./assets/images/prints/friends_in_the_wild.jpg",
     link: "https://www.etsy.com/listing/1876100491/friends-in-the-wild"
   },
   {
@@ -37,7 +37,7 @@ export const products = [
     name: "Just A Frog And A Toad",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/just_a_frog_and_toad.avif",
+    image: "./assets/images/prints/just_a_frog_and_toad.avif",
     link: "https://www.etsy.com/listing/1876100099/just-a-frog-and-a-toad"
   },
   {
@@ -45,7 +45,7 @@ export const products = [
     name: "Little Flower In Disguise",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/little_flower_in_disguise.webp",
+    image: "./assets/images/prints/little_flower_in_disguise.webp",
     link: "https://www.etsy.com/listing/1884077139/little-flower-in-disguise"
   },
   {
@@ -53,7 +53,7 @@ export const products = [
     name: "Littlest Frog, The Dart",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/littlest_frog_the_dart.jpg",
+    image: "./assets/images/prints/littlest_frog_the_dart.jpg",
     link: "https://www.etsy.com/listing/1884078015/littlest-frog-the-dart"
   },
   {
@@ -61,7 +61,7 @@ export const products = [
     name: "Sleepy Woman",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/sleepy_woman.webp",
+    image: "./assets/images/prints/sleepy_woman.webp",
     link: "https://www.etsy.com/listing/1884075095/sleepy-woman"
   },
   {
@@ -69,7 +69,7 @@ export const products = [
     name: "The Ruby To My Sapphire",
     price: 10,
     category: "Prints",
-    image: "/assets/images/prints/the_ruby_to_my_sapphire.jpg",
+    image: "./assets/images/prints/the_ruby_to_my_sapphire.jpg",
     link: "https://www.etsy.com/listing/1861908852/the-ruby-to-my-sapphire"
   },
   {
@@ -77,7 +77,7 @@ export const products = [
     name: "Shiny Goldfish Ice Cream Popsicle",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/shiny_goldfish_ice_cream_popsicle.jpg",
+    image: "./assets/images/stickers/shiny_goldfish_ice_cream_popsicle.jpg",
     link: "https://www.etsy.com/listing/1884086445/shiny-goldfish-ice-cream-popsicle"
   },
   {
@@ -85,7 +85,7 @@ export const products = [
     name: "Rainbow Ghost",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/rainbow_ghost.jpg",
+    image: "./assets/images/stickers/rainbow_ghost.jpg",
     link: "https://www.etsy.com/listing/1869900588/rainbow-ghost"
   },
   {
@@ -93,7 +93,7 @@ export const products = [
     name: "Kawaii Fox Girl",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/kawaii_fox_girl.jpg",
+    image: "./assets/images/stickers/kawaii_fox_girl.jpg",
     link: "https://www.etsy.com/listing/1869902564/kawaii-fox-girl"
   },
   {
@@ -101,7 +101,7 @@ export const products = [
     name: "Bubblegum Girl",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/bubblegum_girl.webp",
+    image: "./assets/images/stickers/bubblegum_girl.webp",
     link: "https://www.etsy.com/listing/1869901630/bubblegum-girl"
   },
   {
@@ -109,7 +109,7 @@ export const products = [
     name: "Emo Cat",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/emo_cat.webp",
+    image: "./assets/images/stickers/emo_cat.webp",
     link: "https://www.etsy.com/listing/1869901104/emo-cat"
   },
   {
@@ -117,7 +117,7 @@ export const products = [
     name: "Rainbow Crow",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/rainbow_crow.jpg",
+    image: "./assets/images/stickers/rainbow_crow.jpg",
     link: "https://www.etsy.com/listing/1869898664/rainbow-crow"
   },
   {
@@ -125,7 +125,7 @@ export const products = [
     name: "Vampire Girl",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/vampire_girl.jpg",
+    image: "./assets/images/stickers/vampire_girl.jpg",
     link: "https://www.etsy.com/listing/1884083531/vampire-girl"
   },
   {
@@ -133,7 +133,7 @@ export const products = [
     name: "Shiny Lizard Ice Cream Popsicle",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/shiny_lizard_ice_cream_popsicle.jpg",
+    image: "./assets/images/stickers/shiny_lizard_ice_cream_popsicle.jpg",
     link: "https://www.etsy.com/listing/1884086081/shiny-lizard-ice-cream-popsicle"
   },
   {
@@ -141,7 +141,7 @@ export const products = [
     name: "Purple Glob Or Ice Cream",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/purple_glob_or_ice_cream.avif",
+    image: "./assets/images/stickers/purple_glob_or_ice_cream.avif",
     link: "https://www.etsy.com/listing/1869904170/purple-glob-or-ice-cream"
   },
   {
@@ -149,7 +149,7 @@ export const products = [
     name: "Owl Popsicle Ice Cream",
     price: 4,
     category: "Stickers",
-    image: "/assets/images/stickers/owl_popsicle_ice_cream.jpg",
+    image: "./assets/images/stickers/owl_popsicle_ice_cream.jpg",
     link: "https://www.etsy.com/listing/1869905252/owl-popsicle-ice-cream"
   },
 ];
